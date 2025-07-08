@@ -28,18 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(782, 553);
+            dataGridView1.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(782, 553);
+            Controls.Add(dataGridView1);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dataGridView1;
     }
 }
